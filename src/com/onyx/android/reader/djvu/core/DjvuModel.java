@@ -49,6 +49,13 @@ public class DjvuModel implements IDocumentModel
     {
         return sInstance;
     }
+    
+    @Override
+    public void setDocumentCallbackListener(DocumentCallbackListener l)
+    {
+        // TODO Auto-generated method stub
+        
+    }
 
     @Override
     public boolean canOpen(String path)
@@ -92,6 +99,13 @@ public class DjvuModel implements IDocumentModel
             mDjvuDocument.destroy();
             return true;
         }
+    }
+    
+    @Override
+    public void setDocumentPassword(String password)
+    {
+        // TODO Auto-generated method stub
+        
     }
 
     @Override
